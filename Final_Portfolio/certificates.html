@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Certificates | Ahmed Alsayed Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/certificates.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <canvas class="matrix-bg" id="matrixCanvas" width="360" height="692"></canvas>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">CYBER<span>SEC</span></a>
+                <ul class="nav-links" id="nav-links" style="display: none;">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#certificates">Certificates</a></li>
+                    <li><a href="index.html#certifications">Badges</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Certificates Gallery Section -->
+    <section id="certificates-gallery">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="certificates-page-header">
+                <div class="header-content">
+                    <h1 class="page-title">Professional Certificates Gallery</h1>
+                    <p class="page-subtitle">Comprehensive collection of 20+ professional certifications and training credentials</p>
+                    <div class="header-divider"></div>
+                </div>
+            </div>
+
+            <!-- Filter/Search Section -->
+            <div class="certificates-controls">
+                <div class="search-box">
+                    <input type="text" id="certificateSearch" placeholder="Search certificates..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="sort-options">
+                    <button class="sort-btn active" data-sort="all">All Certificates</button>
+                    <button class="sort-btn" data-sort="security">Security</button>
+                    <button class="sort-btn" data-sort="network">Network</button>
+                    <button class="sort-btn" data-sort="governance">Governance</button>
+                </div>
+            </div>
+
+            <!-- All Certificates Grid -->
+            <div class="all-certificates-grid" id="certificatesGrid">
+                
+                <!-- Certificate 1 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/HCIA.png" alt="HCIA - Routing & Switching">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>HCIA - Routing & Switching</h3>
+                        <p class="cert-issuer">Huawei Certified ICT Associate</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Network Fundamentals</span>
+                            <span class="cert-skill-tag">Routing Protocols</span>
+                            <span class="cert-skill-tag">Switching Technologies</span>
+                            <span class="cert-skill-tag">Network Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/CCSC.png" alt="Certified Cybersecurity Specialist">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Certified Cybersecurity Specialist</h3>
+                        <p class="cert-issuer">CCSC Certification</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Threat Analysis</span>
+                            <span class="cert-skill-tag">Incident Response</span>
+                            <span class="cert-skill-tag">Security Operations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Cyber Threat Entelligence .png" alt="Cyber Threat Intelligence">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Cyber Threat Intelligence 101</h3>
+                        <p class="cert-issuer">arcX Threat Intelligence</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Threat Intelligence</span>
+                            <span class="cert-skill-tag">Threat Actor Identification</span>
+                            <span class="cert-skill-tag">IoC Analysis</span>
+                            <span class="cert-skill-tag">Intelligence Reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Introduction to Cybersecurity.png" alt="Cybersecurity Fundamentals">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p class="cert-issuer">Cisco Academy</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Security Principles</span>
+                            <span class="cert-skill-tag">Network Defense</span>
+                            <span class="cert-skill-tag">Risk Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Ethical Hacking.png" alt="Ethical Hacking">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Ethical Hacking Fundamentals</h3>
+                        <p class="cert-issuer">Cisco Ethical Hacking</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Penetration Testing</span>
+                            <span class="cert-skill-tag">Vulnerability Assessment</span>
+                            <span class="cert-skill-tag">Exploitation Techniques</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Fortinet Cybersecurity.png" alt="Fortinet Cybersecurity">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Fortinet Cybersecurity Training</h3>
+                        <p class="cert-issuer">National Telecommunication Institute</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Firewall Configuration</span>
+                            <span class="cert-skill-tag">Network Security</span>
+                            <span class="cert-skill-tag">Threat Prevention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 7 -->
+                <div class="certificate-card-full" data-category="governance">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/ISOIEC 270012022 Lead Auditor.png" alt="ISO/IEC 27001:2022 Lead Auditor">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>ISO/IEC 27001:2022 Lead Auditor</h3>
+                        <p class="cert-issuer">ISO Information Security Management</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Information Security</span>
+                            <span class="cert-skill-tag">Governance</span>
+                            <span class="cert-skill-tag">Compliance</span>
+                            <span class="cert-skill-tag">Audit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 8 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Defensive Security Operations.png" alt="Defensive Security Operations">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Defensive Security Operations</h3>
+                        <p class="cert-issuer">Cybrary Security Operations</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">SOC Operations</span>
+                            <span class="cert-skill-tag">Threat Detection</span>
+                            <span class="cert-skill-tag">Incident Response</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 9 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Defensive Security and Cyber Risk.png" alt="Defensive Security and Cyber Risk">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Defensive Security & Cyber Risk</h3>
+                        <p class="cert-issuer">Cybersecurity Risk Management</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Risk Management</span>
+                            <span class="cert-skill-tag">Defensive Strategies</span>
+                            <span class="cert-skill-tag">Cyber Resilience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 10 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Introduction to Zero Trust .png" alt="Introduction to Zero Trust">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Introduction to Zero Trust Architecture</h3>
+                        <p class="cert-issuer">Modern Security Framework</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Zero Trust</span>
+                            <span class="cert-skill-tag">Architecture</span>
+                            <span class="cert-skill-tag">Security Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 11 -->
+                <div class="certificate-card-full" data-category="network">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Introduction to network security.png" alt="Introduction to Network Security">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Introduction to Network Security</h3>
+                        <p class="cert-issuer">Network Security Fundamentals</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Network Protection</span>
+                            <span class="cert-skill-tag">Firewall Basics</span>
+                            <span class="cert-skill-tag">Network Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 12 -->
+                <div class="certificate-card-full" data-category="network">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Computer Network Fundamentals.png" alt="Computer Network Fundamentals">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Computer Network Fundamentals</h3>
+                        <p class="cert-issuer">Network Engineering Basics</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Network Protocols</span>
+                            <span class="cert-skill-tag">OSI Model</span>
+                            <span class="cert-skill-tag">Network Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 13 -->
+                <div class="certificate-card-full" data-category="network">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Network Virtualization Concepts.png" alt="Network Virtualization Concepts">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Network Virtualization Concepts</h3>
+                        <p class="cert-issuer">Virtual Network Infrastructure</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Virtualization</span>
+                            <span class="cert-skill-tag">Virtual Networks</span>
+                            <span class="cert-skill-tag">Cloud Infrastructure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 14 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Introduction to JavaScript Security.png" alt="Introduction to JavaScript Security">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Introduction to JavaScript Security</h3>
+                        <p class="cert-issuer">Web Application Security</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">JavaScript Security</span>
+                            <span class="cert-skill-tag">Web Application</span>
+                            <span class="cert-skill-tag">Code Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 15 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Understanding the OWASP┬« Top 10 Security Threats.png" alt="OWASP Top 10">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Understanding the OWASP Top 10 Security Threats</h3>
+                        <p class="cert-issuer">Linux Foundation</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">OWASP Top 10</span>
+                            <span class="cert-skill-tag">Web Security</span>
+                            <span class="cert-skill-tag">Vulnerability Prevention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 16 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/XSS Exploits and Defenses.png" alt="XSS Exploits and Defenses">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>XSS Exploits and Defenses</h3>
+                        <p class="cert-issuer">Web Security Training</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">XSS Attacks</span>
+                            <span class="cert-skill-tag">Defense Mechanisms</span>
+                            <span class="cert-skill-tag">Mitigation Strategies</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 17 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Cybersecurity Essentials.png" alt="Cybersecurity Essentials">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Cybersecurity Essentials</h3>
+                        <p class="cert-issuer">Essential Security Training</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Security Basics</span>
+                            <span class="cert-skill-tag">Best Practices</span>
+                            <span class="cert-skill-tag">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 18 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Cybersecurity Fundamentals.png" alt="Cybersecurity Fundamentals">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Cybersecurity Fundamentals</h3>
+                        <p class="cert-issuer">Core Security Concepts</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Fundamentals</span>
+                            <span class="cert-skill-tag">Core Concepts</span>
+                            <span class="cert-skill-tag">Security Principles</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 19 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Practical Security Fundamentals.png" alt="Practical Security Fundamentals">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Practical Security Fundamentals</h3>
+                        <p class="cert-issuer">Hands-on Security Training</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Practical Skills</span>
+                            <span class="cert-skill-tag">Hands-on Training</span>
+                            <span class="cert-skill-tag">Real-world Application</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 20 -->
+                <div class="certificate-card-full" data-category="governance">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Governance, Risk, Compliance, and Data Privacy.png" alt="GRC and Data Privacy">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Governance, Risk, Compliance & Data Privacy</h3>
+                        <p class="cert-issuer">IBM GRC Training</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Governance</span>
+                            <span class="cert-skill-tag">Risk Management</span>
+                            <span class="cert-skill-tag">Compliance</span>
+                            <span class="cert-skill-tag">Data Privacy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 21 -->
+                <div class="certificate-card-full" data-category="network">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Introduction to Linux.png" alt="Introduction to Linux">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Introduction to Linux</h3>
+                        <p class="cert-issuer">Linux Foundation</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Linux Basics</span>
+                            <span class="cert-skill-tag">System Administration</span>
+                            <span class="cert-skill-tag">Command Line</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 22 -->
+                <div class="certificate-card-full" data-category="network">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Red Hat System Administration I.png" alt="Red Hat System Administration">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Red Hat System Administration I</h3>
+                        <p class="cert-issuer">Red Hat Enterprise Linux</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">System Administration</span>
+                            <span class="cert-skill-tag">RHEL</span>
+                            <span class="cert-skill-tag">Linux Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 23 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/practical ethical hacking-completed course.png" alt="Practical Ethical Hacking">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Practical Ethical Hacking - Complete Course</h3>
+                        <p class="cert-issuer">TCM Security</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Ethical Hacking</span>
+                            <span class="cert-skill-tag">Penetration Testing</span>
+                            <span class="cert-skill-tag">Advanced Techniques</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 24 -->
+                <div class="certificate-card-full" data-category="security">
+                    <div class="certificate-img-container">
+                        <img src="assets/certificates/Email Authentications.png" alt="Email Authentications">
+                    </div>
+                    <div class="certificate-info-full">
+                        <h3>Email Authentication & Security</h3>
+                        <p class="cert-issuer">Email Security Protocols</p>
+                        <div class="cert-skill-tags">
+                            <span class="cert-skill-tag">Email Security</span>
+                            <span class="cert-skill-tag">DMARC/SPF</span>
+                            <span class="cert-skill-tag">Authentication</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Back to Main Button -->
+            <div class="back-to-main">
+                <a href="index.html#certificates" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">CYBER<span>SEC</span></div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ahmed-alsayed-albanna/" class="social-link" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com" class="social-link" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/201125802831" class="social-link" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Ahmed Alsayed Portfolio. All rights reserved. | Cybersecurity Professional
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/certificates.js"></script>
+</body>
+</html>
